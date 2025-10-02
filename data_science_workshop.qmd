@@ -1,0 +1,28 @@
+---
+title: "Data Science Workshop Session 3"
+subtitle: 'MSc in Statistics 2025/26, Imperial College London'
+author: "Claire Sibbald"
+format:
+  html:
+    toc: true
+    highlight: tango
+    self-contained: true
+  pdf: default
+format-links: false
+#bibliography: ref.bib
+---
+```{r include=FALSE}
+library(palmerpenguins)
+library(ggplot2)
+library(dplyr)
+library(knitr)
+```
+# The data
+The data we are working with comes from the Palmer Penguins data set. The following is a sample of the data:
+```{r echo=FALSE}
+kable(head(penguins), caption='Table 1. Penguins dataset',
+      col.names=c('Species', 'Island', 'Bill Length (mm)', 'Bill Depth (mm)', 
+                  'Flipper Length (mm)', 'Body Mass (g)', 'Sex', 'Year'))
+```
+
+#
